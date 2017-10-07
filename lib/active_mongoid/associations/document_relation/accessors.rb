@@ -40,7 +40,8 @@ module ActiveMongoid
 
         module ClassMethods
 
-          private
+          # instead of public, also method renaming would be correct.
+          # private
 
           def existence_check(name)
             module_eval <<-END
